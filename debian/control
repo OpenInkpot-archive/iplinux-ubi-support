@@ -7,7 +7,7 @@ Build-Depends: debhelper (>= 7),
 Standards-Version: 3.8.0
 
 Package: ubi-support
-Architecture: any
+Architecture: all
 Depends: mtd-utils
 Description: X server initialisation tool
  xinit is the program which facilitates starting an X server, and
