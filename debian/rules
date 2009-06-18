@@ -13,7 +13,9 @@ install: build
 	dh_prep
 
 	mkdir -p $(CURDIR)/debian/ubi-support/lib/mdev
+	mkdir -p $(CURDIR)/debian/ubi-support/etc/mdev.conf.d
 	cp ubi_id $(CURDIR)/debian/ubi-support/lib/mdev
+	cp 90ubi-support $(CURDIR)/debian/ubi-support/lib/mdev
 
 binary-indep: install
 	dh_testdir
