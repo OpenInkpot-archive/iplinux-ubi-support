@@ -1,3 +1,9 @@
+ubi-support (0.1.1) asimov; urgency=low
+
+  * Fixed architecture of binary package.
+
+ -- Mikhail Gusarov <dottedmag@dottedmag.net>  Thu, 18 Jun 2009 10:44:56 +0700
+
 ubi-support (0.1) asimov; urgency=low
 
   * First build for IPlinux.
