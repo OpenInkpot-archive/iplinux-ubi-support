@@ -1,12 +1,11 @@
 #!/bin/sh
 set -e
 
-LV=$(ubinfo /dev/$MDEV | awk '/^Name:/ { print $2 }')  
-VG=${MDEV%_*}                                          
+VG=${MDEV%_*}
+LV=$(cat /sys/class/ubi/$VG/$MDEV/name)
 
 if [ -z "$ACTION" ] || [ "x$ACTION" = xadd ]; then
   ln -sf /dev/$MDEV /dev/${VG}_${LV}
 else
   rm -f /dev/${VG}_${LV}
 fi 
-
