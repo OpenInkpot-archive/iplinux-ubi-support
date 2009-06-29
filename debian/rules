@@ -14,8 +14,9 @@ install: build
 
 	mkdir -p $(CURDIR)/debian/ubi-support/lib/mdev
 	cp ubi_id $(CURDIR)/debian/ubi-support/lib/mdev
+	cp mtdblock_id $(CURDIR)/debian/ubi-support/lib/mdev
 	mkdir -p $(CURDIR)/debian/ubi-support/etc/mdev.conf.d
-	cp 90ubi-support $(CURDIR)/debian/ubi-support/etc/mdev.conf.d
+	cp 90ubi-support 91mtdblock-support $(CURDIR)/debian/ubi-support/etc/mdev.conf.d
 
 binary-indep: install
 	dh_testdir
