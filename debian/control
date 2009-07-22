@@ -3,12 +3,12 @@ Section: core
 Priority: optional
 Maintainer: Mikhail Gusarov <dottedmag@dottedmag.net>
 XCS-Cross-Host-Build-Depends: debhelper (>= 7)
-Build-Depends: debhelper (>= 7),
+Build-Depends: debhelper (>= 7)
 Standards-Version: 3.8.0
 
 Package: ubi-support
 Architecture: all
-Depends: mtd-utils, mdev (>= 1:1.12.0-9)
+Depends: mdev (>= 1:1.12.0-9)
 Description: UBI mdev support
  This package contains mdev support files and utilities for generating
  human-readable UBI symlinks in /dev.
