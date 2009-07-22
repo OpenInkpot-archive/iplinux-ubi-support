@@ -1,3 +1,10 @@
+ubi-support (0.1.5) asimov; urgency=low
+
+  * mtdblock_id / 91mtdblock-support moved to mtd-support package.
+  * mtd-utils removed from depends, unused
+
+ -- Mikhail Gusarov <dottedmag@dottedmag.net>  Thu, 23 Jul 2009 02:54:23 +0700
+
 ubi-support (0.1.4) asimov; urgency=low
 
   * Added mtdblock* -> mtblock_$NAME symlinks generation
